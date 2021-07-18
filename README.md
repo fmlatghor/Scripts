@@ -26,10 +26,10 @@ A collection of useful scripts.
 | yt-mpeg        | Turn wav/cover image into a video optimised for yt.                   |
 
 ### db
-"./cfg/db" contains the directories in your database. This is the file you edit, and it follows a simple syntax.
+`./cfg/db` contains the directories in your database. This is the file you edit, and it follows a simple syntax.
 ```sh
 <alias-name> /path/to/dir
 ```
 The alias name needs to be one argument...otherwise the script can't parse it.
 
-After editing the db file, you will run "./bin/db" -- which parses the data and outputs a file to "./dat/db-c" containing your aliases in shell form. Add `source /path/to/Scripts/dat/db-c` to your shell config. After that, just remember to source your shell config and everything should work.
+After editing the db file, you will run `./bin/db` -- which parses the data and outputs a file to `./dat/db-c` containing your aliases in shell form. Add `source /path/to/Scripts/dat/db-c` to your shell config. After that, just remember to source your shell config and everything should work.
