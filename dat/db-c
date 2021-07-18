@@ -1,0 +1,5 @@
+alias a="cd ~/Asiakirjat"
+alias p="cd ~/Projektit"
+alias t="cd ~/Testi"
+alias v="cd ~/vimwiki"
+alias vd="cd ~/vimwiki/diary"

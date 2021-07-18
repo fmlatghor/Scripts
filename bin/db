@@ -1,0 +1,1 @@
+awk '{print "alias "$1"=\"cd "$2"\""}' ~/Scripts/cfg/db | sort -u > ~/Scripts/dat/db-c

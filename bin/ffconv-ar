@@ -6,7 +6,7 @@ read toext
 for i in *.$ext;
 do name=`echo "$i" | grep -E '(.+?)(\.[^.]*$|$)'`
 	echo "$name"
-	ffmpeg -i "$i" "${name}.$toext" -movflags use_metadata_tags
+	ffmpeg -i "$i" "${name}.$toext"
 done
 while true; do
 	read -p "Delete original files? " yn
