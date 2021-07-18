@@ -20,7 +20,6 @@ A collection of useful scripts.
 | pip-upgrade    | Upgrade all pip packages.                                             |
 | repack         | Completely repack an NDS rom with `ndstool`.                          |
 | scanif         | Scan several documents one-by-one with SANE/CUPS.                     |
-| ugrade         | Upgrade packages for every package manager.                           |
 | unpack         | Completely unpack an NDS rom with `ndstool`.                          |
 | yt-dl          | youtube-dl "magic" download.                                          |
 | yt-mpeg        | Turn wav/cover image into a video optimised for yt.                   |

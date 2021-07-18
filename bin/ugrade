@@ -1,9 +1,0 @@
-#!/bin/dash
-sudo dnf upgrade -y &&
-sudo pacman -Syu &&
-pip-upgrade &&
-sudo npm -g upgrade &&
-sudo npm install -g npm &&
-sudo yarn global upgrade &&
-sudo update_rubygems &&
-sudo gem update --system

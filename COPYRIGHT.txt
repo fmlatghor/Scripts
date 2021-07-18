@@ -10,8 +10,6 @@ pa-rescan - Copyright (c) 2015 Signez
 
 scanif is licensed under the Unlicense. A license copy is provided in LICENSES/Unlicense.txt.
 
-ugrade is licensed under the Unlicense. A license copy is provided in LICENSES/Unlicense.txt.
-
 yt-dl is licensed under the Unlicense. A license copy is provided in LICENSES/Unlicense.txt.
 
 yt-mpeg is licensed under the Unlicense. A license copy is provided in LICENSES/Unlicense.txt.
