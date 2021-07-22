@@ -1,9 +1,10 @@
 # Scripts
-A collection of useful scripts.
+A collection of useful scripts. These scripts are written by various authors. Attribution and license details is provided in ./COPYRIGHT.txt.
 
 ## Scripts info
 | Script         | Info                                                                  |
 |----------------|-----------------------------------------------------------------------|
+| abc            | A Binary Comparison tool.                                             |
 | db             | Quickly cd into specific directories using short aliases.             |
 | ffconv         | Batch convert mkvs to mp4s.                                           |
 | ffconv-a       | Batch convert from one format to another.                             |

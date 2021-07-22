@@ -1,0 +1,62 @@
+#!/bin/bash
+
+function oct2asc() {
+	if [[ $1 ]]; then
+		echo -en "\0$(printf %o $((8#$1)))"
+	fi
+}
+
+function oct2dec() {
+	if [[ $1 ]]; then
+		echo $((8#$1))
+	fi
+}
+
+
+IFS=$'\n'
+list=$( cmp -l $1 $2 )
+for i in $list
+do
+        lval=$val
+        val=$( echo $i | awk '{ print $1 }' )
+        if [[ $lval != "" ]]; then
+                if [[ $val != $(( lval + 1 )) ]]; then
+                        echo
+                fi
+        fi
+        data=$( echo $i | awk '{ print $2, $3 }' )
+        i="$(( val - 1 )) $data"
+        echo $i | awk 'function oct2dec(oct,     dec) {
+                for (i = 1; i <= length(oct); i++) {
+                        dec *= 8;
+                        dec += substr(oct, i, 1)
+                };
+                return dec
+        }
+
+        {
+                printf "%08X %02X %02X ", $1, oct2dec($2), oct2dec($3)
+        }'
+
+	val1=$( echo $i | awk '{ print $2 }' )
+	val2=$( echo $i | awk '{ print $3 }' )
+
+	val1dec=$( oct2dec $val1 )
+	val2dec=$( oct2dec $val2 )
+
+	if [[ $val1dec -ge 32 && $val1dec -le 126 ]]
+	then
+		oct2asc $val1
+	else
+		printf " "
+	fi
+
+	if [[ $val2dec -ge 32 && $val2dec -le 126 ]]
+	then
+		printf " "
+		oct2asc $val2
+	fi
+
+	echo
+
+done
