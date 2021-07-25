@@ -37,3 +37,5 @@ Copyright (c) 2010 magical - nlzss, nlzss-c, licensed under the MIT license. A l
 Copyright (c) 202x Stéphane Peter - makeself, licensed under GPLv2.0 or later. A license copy is provided in LICENSES/LICENSES/GPL-2.0-or-later.txt.
 
 db is licensed under the Unlicense. A license copy is provided in LICENSES/Unlicense.txt.
+
+eliza is licensed under the Unlicense. A license copy is provided in LICENSES/Unlicense.txt.

@@ -1,0 +1,5 @@
+#!/bin/perl
+use Chatbot::Eliza
+
+$bot = new Chatbot::Eliza;
+$bot->command_interface;

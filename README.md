@@ -6,6 +6,7 @@ A collection of useful scripts. These scripts are written by various authors. At
 |----------------|-----------------------------------------------------------------------|
 | abc            | A Binary Comparison tool.                                             |
 | db             | Quickly cd into specific directories using short aliases.             |
+| eliza          | Runs the perl clone of the Eliza chatbot.                             |
 | ffconv         | Batch convert mkvs to mp4s.                                           |
 | ffconv-a       | Batch convert from one format to another.                             |
 | ffconv-ar      | Batch convert from one format to another without preserving metadata. |
